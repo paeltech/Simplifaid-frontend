@@ -15,7 +15,7 @@
               placeholder="Email"
               autofocus
             />
-            <small v-if="errors.email" class="mt-2 text-danger">{{ errors.email[0] }}</small>
+            <small v-if="errors.email" class="mt-2 text-red-500">{{ errors.email[0] }}</small>
           </div>
           <div class="mb-6">
             <label class="block text-gray-800 text-sm font-bold mb-2" for="password">Password</label>
@@ -26,7 +26,7 @@
               type="password"
               placeholder="******************"
             />
-            <small v-if="errors.password" class="mt-2 text-danger">{{ errors.password[0] }}</small>
+            <small v-if="errors.password" class="mt-2 text-red-500">{{ errors.password[0] }}</small>
           </div>
           <div class="flex items-center justify-between">
             <button
@@ -54,6 +54,7 @@
 <script>
 export default {
   components: {},
+  middleware: ['guest'],
   data() {
     return {
       form: {
@@ -64,10 +65,16 @@ export default {
   },
   methods: {
     async pressed() {
-      await this.$auth.loginWith('local', {
-        data: this.form
-      }),
-        this.$router.push('/')
+      try {
+        await this.$auth.loginWith('local', {
+          data: this.form
+        }),
+          this.$router.push({
+            path: this.$route.query.redirect || '/dashboard'
+          })
+      } catch (e) {
+        return
+      }
     }
   }
 }

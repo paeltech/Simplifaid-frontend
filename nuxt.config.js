@@ -29,13 +29,17 @@ export default {
    ** Global CSS
    */
   css: [],
+
+  router: {
+    middleware: ["clearValidationErrors"]
+  },
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     "./plugins/mixins/user.js",
-    "./plugins/mixins/validation.js",
-    "./plugins/axios.js"],
+    "./plugins/axios.js",
+    "./plugins/mixins/validation.js"],
   /*
    ** Nuxt.js dev-modules
    */

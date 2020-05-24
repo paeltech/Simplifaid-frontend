@@ -130,5 +130,6 @@ export default {
     Navigation,
     Footer
   }
+  //middleware: ['auth']
 }
 </script>
