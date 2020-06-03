@@ -78,7 +78,7 @@ export default {
           }
         })
         this.$router.push({
-          path: this.$route.query.redirect || '/dashboard'
+          path: this.$route.query.redirect || '/profile'
         })
       } catch (e) {
         return

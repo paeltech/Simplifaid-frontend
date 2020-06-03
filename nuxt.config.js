@@ -17,7 +17,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        src: 'https://unpkg.com/ionicons@5.0.0/dist/ionicons.js'
+        src: 'https://unpkg.com/ionicons@5.0.0/dist/ionicons.js',
       }
     ]
   },
@@ -63,7 +63,8 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: "http://localhost:8000/api"
+    //baseURL: "https://simplifaid-api.herokuapp.com/api/"
+    baseURL: "http://localhost:8000/api/"
   },
   // Config auth endpoints
   auth: {

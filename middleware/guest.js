@@ -1,5 +1,5 @@
 export default function ({ store, redirect }) {
     if (store.getters["authenticated"]) {
-        return redirect("dashboard")
+        return redirect("/dashboard")
     }
 }
