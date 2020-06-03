@@ -1,6 +1,6 @@
 # simplifaid
 
-> Gigital grocery store.
+> Digital grocery store front end leveraging laravel API.
 
 ## Build Setup
 
