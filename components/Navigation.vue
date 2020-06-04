@@ -1,12 +1,14 @@
 <template>
   <nav class="flex flex-row md:justify-between">
     <div class="flex flex-row justify-between">
-      <nuxt-link to="/">
-        <img class="w-8 md:w-10" src="~/static/img/logo.png" alt />
-      </nuxt-link>
-      <p class="md:hidden mt-2 hamburger" @click="isOpen = !isOpen">
+      <div>
+        <nuxt-link to="/">
+          <img class="w-8 md:w-10" src="~/static/img/logo.png" alt />
+        </nuxt-link>
+      </div>
+      <div class="md:hidden absolute right-0 mt-2 mr-2 hamburger" @click="isOpen = !isOpen">
         <ion-icon name="menu-outline"></ion-icon>
-      </p>
+      </div>
     </div>
     <ul :class="isOpen ? 'block' : 'hidden'" class="md:flex md:flex-row mt-8 md:mt-2">
       <!-- <li class="mr-6 mt-4">
