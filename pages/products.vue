@@ -2,7 +2,7 @@
   <div>
     <SubNav />
     <section id="kids-special" class="container mx-auto p-6 mt-12">
-      <div class="bg-white rounded-md px-12 py-8">
+      <div class="bg-white rounded-md px-6 md:px-12 py-8">
         <div class>
           <span class="float-right">
             I don't need this
@@ -11,10 +11,10 @@
           <p class="text-green-600">Special</p>
           <h1 class="text-2xl">FOR CHILDREN</h1>
         </div>
-        <div class="grid gap-8 grid-cols-4 mt-6">
+        <div class="grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-4 mt-6">
           <div>
             <div class="hover:bg-gray-100 rounded">
-              <img class="px-6 pt" src="~/static/img/fruits.png" alt />
+              <img class="px-2 md:px-6 pt" src="~/static/img/fruits.png" alt />
               <div class="px-4 pb-4">
                 <h2 class="pt-2 font-bol text-center text-xl text-gray-800 mb">Tomatoes</h2>
                 <p class="pt-0 text-sm text-center">
@@ -140,15 +140,15 @@
       </div>
     </section>
     <section id="kids-special" class="container mx-auto p-6">
-      <div class="px-12 py-8">
+      <div class="px-6 md:px-12 py-8">
         <div class>
           <p class="text-green-600">Fresh</p>
           <h1 class="text-2xl">VEGETABLES</h1>
         </div>
-        <div class="grid gap-8 grid-cols-4 mt-6">
+        <div class="grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-4 mt-6">
           <div>
-            <div class="hover:bg-gray-100 rounded">
-              <img class="px-6 pt" src="~/static/img/fruits.png" alt />
+            <div class="hover:bg-gray-100 pb-2 rounded">
+              <img class="px-4 md:px-6 pt" src="~/static/img/fruits.png" alt />
               <div class="px-4 pb-4">
                 <h2 class="pt-2 font-bol text-center text-xl text-gray-800 mb">Tomatoes</h2>
                 <p class="pt-0 text-sm text-center">
@@ -178,8 +178,8 @@
             </div>
           </div>
           <div>
-            <div class="hover:bg-gray-100 rounded">
-              <img class="px-6 pt" src="~/static/img/herbs.png" alt />
+            <div class="hover:bg-gray-100 pb-2 rounded">
+              <img class="px-4 md:px-6 pt" src="~/static/img/herbs.png" alt />
               <div class="px-4 pb-4">
                 <h2 class="pt-2 font-bol text-center text-xl text-gray-800 mb">Corriander</h2>
                 <p class="pt-0 text-sm text-center">

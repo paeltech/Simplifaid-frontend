@@ -1,8 +1,8 @@
 <template>
   <div class="container mx-auto mt-32 px-6">
     <hr />
-    <div class="flex justify-between mt-16 pb-16">
-      <div class="w-1/2">
+    <div class="flex flex-col md:justify-between mt-16 pb-8 md:pb-16">
+      <div class="w-full md:w-1/2">
         <h4 class="text-2xl font-bold">Let's get social</h4>
         <ul class="flex flex-row item-start mt-4">
           <li>
@@ -23,8 +23,8 @@
         </ul>
       </div>
 
-      <div class="w-1/2">
-        <p class="float-right mt-8 pt-6">
+      <div class="w-full md:w-1/2">
+        <p class="md:float-right md:mt-8 pt-6">
           &copy; Simplifaid | A product of
           <a href="#">Hawks.agency</a>
         </p>
