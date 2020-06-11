@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="container mx-auto w-1/4 h-full flex flex-col content-center justify-center">
-      <div class="px-8 py-16 rounded-lg bg-white mt-32 mb-32">
+    <div
+      class="container mx-auto w-3/4 md:w-1/4 h-full flex flex-col content-center justify-center"
+    >
+      <div class="px-8 py-16 rounded-lg bg-white mt-16 md:mt-32 mb-32">
         <h3 class="text-2xl font-bold mb-4">Login</h3>
 
         <form @submit.prevent="pressed">
